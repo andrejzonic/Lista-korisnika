@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekat</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+
+</head>
+<body>
+
+    
+      
+    <!--Code to get multiple students and display them in a table-->
+
+    
+    <div id="container">
+
+        <div id="nameDiv" class="input">Ime: <input id="Ime" type="text" placeholder=></div>
+        <div class="input">Adresa: <input id="Adresa" type="text" placeholder=></div>
+        <div class="input">Telefon: <input id="Telefon" type="text" placeholder=></div>
+        <button id="entry">Input entry</button>
+        
+    </div>
+
+    <table id="display">
+        <tr>
+            <th>Ime</th>
+            <th>Adresa</th>
+            <th>Telefon</th>
+        </tr>
+
+        <tr>
+            <th>Michael</th>
+            <th>257 Smith Rd
+                Carson, Mississippi(MS),</th>
+            <th>(601) 943-6386</th>
+        </tr>
+
+        <tr>
+            <th>Jon</th>
+            <th>106 Leonard Ln
+                Crescent City, Florida(FL),</th>
+            <th>(386) 698-4950</th>
+        </tr>
+
+        <tr>
+            <th>Tom</th>
+            <th>695 Trucker Dr
+                Ararat, Virginia(VA)</th>
+            <th>(276) 251-5307</th>
+        </tr>
+
+        <tr>
+            <th>James</th>
+            <th>Rices Mill Rd
+                Wyncote, Pennsylvania(PA)</th>
+            <th>(215) 277-5168</th>
+        </tr>
+
+        
+    </table>
+
+    <!-- HTML element to iterate-->
+    <script type="text/javascript" src="script.js">
+
+        // Get element to be iterated
+        let constusers = 
+        document.getElementsByTagName("p");
+
+        // Use a regular for loop
+        for(let i = 0; i < constusers.length; i++) {
+
+        // Print the current element
+        console.log(constusers[i]);
+
+        }
+
+    </script>
+
+<div id="users">
+    <input class="search" placeholder="Search" />
+    <button class="sort" data-sort="name">
+      Sort by name
+    </button>
+    <table>
+      <!-- IMPORTANT, class="list" have to be at tbody -->
+      <tbody class="list">
+        <tr>
+          <td class="name">Jonny Stromberg</td>
+          <td class="address">3680 Hardman Road</td>
+          <td class="phone">802-490-3750</td>
+        </tr>
+        <tr>
+          <td class="name">Jonas Arnklint</td>
+          <td class="address">919 Clarksburg Park Road</td>
+          <td class="phone">928-349-6810</td>
+        </tr>
+        <tr>
+          <td class="name">Martina Elm</td>
+          <td class="address">3032 Jerry Toth Drive</td>
+          <td class="phone">907-299-5121</td>
+        </tr>
+        <tr>
+          <td class="name">Gustaf Lindqvist</td>
+          <td class="address">173 Archwood Avenue</td>
+          <td class="phone">307-840-1476</td>
+        </tr>
+        <tr>
+            <td class="name">Sahil Pennington</td>
+            <td class="address">1526 Meadow View Drive</td>
+            <td class="phone">860-202-4552</td>
+          </tr>
+      </tbody>
+    </table>
+  
+  </div>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+
+    
+
+    
+    
+</body>
+</html>
